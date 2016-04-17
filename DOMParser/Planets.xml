@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<planets>
+  <planet ID="1">
+    <name>Mercury</name>
+  </planet>
+  <planet ID="2">
+    <name>Venus</name>
+  </planet>
+  <planet ID="3">
+    <name>Earth</name>
+  </planet>
+  <planet ID="4">
+    <name>Mars</name>
+  </planet>
+  <planet ID="5">
+    <name>Jupiter</name>
+  </planet>
+  <planet ID="6">
+    <name>Saturn</name>
+  </planet>
+  <planet ID="7">
+    <name>Uranus</name>
+  </planet>
+  <planet ID="8">
+    <name>Neptun</name>
+  </planet>
+</planets>
+
