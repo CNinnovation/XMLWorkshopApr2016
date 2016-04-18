@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Racers xmlns="http://www.formula1.com/2016">
+  <Racer Id="1" FirstName="Nico" LastName="Rosberg">
+    <Team Name="Mercedes" />
+    <Address>
+      <Country>Monaco</Country>
+    </Address>
+  </Racer>
+  <Racer Id="2" FirstName="Sebastian" LastName="Vettel">
+    <Team Name="Ferrari" />
+    <Address>
+      <City>abc</City>
+      <Country>Switzerland</Country>
+    </Address>
+  </Racer>
+</Racers> 

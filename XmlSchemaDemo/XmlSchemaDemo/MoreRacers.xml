@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Racers xmlns="http://www.formula1.com/2016">
+  <Racer Id="4711" FirstName="Fernando" LastName="Alonso">
+    <Team Name="McLaren"/>
+    <Address>
+      <Country>Monaco</Country>
+    </Address>
+  </Racer>
+</Racers>

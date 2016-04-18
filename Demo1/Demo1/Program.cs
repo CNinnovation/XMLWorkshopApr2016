@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Xml;
 
 namespace Demo1
@@ -9,15 +10,19 @@ namespace Demo1
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(@"C:\Source\XMLWorkshopApr2016\Demo1\Demo1\Books.xml");
+           
 
-            ShowChildNodes(doc);
+            ShowChildNodes(0, "root", doc);
+
+            Console.ReadLine();
         }
 
-        private static void ShowChildNodes(XmlNode doc)
+        private static void ShowChildNodes(int indent, string title, XmlNode doc)
         {
-            Console.WriteLine(nameof(ShowChildNodes));
+           // Console.WriteLine($"{nameof(ShowChildNodes)} - {title}");
             foreach (XmlNode node in doc.ChildNodes)
             {
+           
                 XmlDeclaration declaration = node as XmlDeclaration;
                 if (declaration != null)
                 {
@@ -27,23 +32,26 @@ namespace Demo1
                 XmlElement element = node as XmlElement;
                 if (element != null)
                 {
-                    Console.WriteLine($"{element.Name}, inner text: {element.InnerText}, inner XML: {element.InnerXml}");
+                    // Console.WriteLine($"{element.Name}, inner text: {element.InnerText}, inner XML: {element.InnerXml}");
+                    Console.WriteLine($"{string.Join(" ", Enumerable.Repeat(" ", indent))} {element.Name}, inner text: {element.InnerText}");
                 }
 
                 if (node.Attributes?.Count > 0)
                 {
                     foreach (XmlAttribute attribute in node.Attributes)
                     {
-                        Console.WriteLine($"Attribute: {attribute.Name}: {attribute.Value}");
+                        Console.WriteLine($"{string.Join(" ", Enumerable.Repeat(" ", indent))} Attribute: {attribute.Name}: {attribute.Value}");
                     }
+
                 }
+             //   Console.WriteLine();
 
                 if (node.HasChildNodes)
                 {
-                    ShowChildNodes(node);
+                    ShowChildNodes(indent + 1, $"parent: {node.Name}", node);
                 }            
             }
-            Console.WriteLine();
+
         }
     }
 }

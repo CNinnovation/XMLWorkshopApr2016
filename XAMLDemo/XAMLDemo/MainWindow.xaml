@@ -5,16 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XAMLDemo"
         mc:Ignorable="d"
+        xmlns:my="5DFECA14-E30B-4E59-9A3F-9CFAF5EE384F"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
+       
         <RadialGradientBrush x:Key="myBrush">
             <GradientStop Offset="0" Color="White" />
             <GradientStop Offset="0.5" Color="Orange" />
             <GradientStop Offset="1" Color="Red" />
         </RadialGradientBrush>
     </Window.Resources>
-    <Grid>
-        <Button Width="200" Background="{StaticResource myBrush}">
+    <Grid x:Name="grid1">
+        <Button x:Name="button1" Width="200" Background="{StaticResource myBrush}">
             Click Me!
             <Button.Height>90</Button.Height>
         </Button>

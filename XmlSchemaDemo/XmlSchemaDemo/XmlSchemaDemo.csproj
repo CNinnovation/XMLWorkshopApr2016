@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0F65E83-8F72-417F-B12E-3D1DB5BFCE96}</ProjectGuid>
+    <ProjectGuid>{6916B5FC-5AE0-4E9A-A9C7-7AEB9BB34793}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Demo2</RootNamespace>
-    <AssemblyName>Demo2</AssemblyName>
+    <RootNamespace>XmlSchemaDemo</RootNamespace>
+    <AssemblyName>XmlSchemaDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,7 +50,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Books.xml" />
+    <Content Include="MoreRacers.xml" />
+    <Content Include="Racers.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Books>
-  <Book Isbn="273487487" Title="Professional C# 6">
+<b:Books xmlns:b="http://cninnovation.com/samples/2016/4"  >
+  <Book Isbn="273487487" Title="Professional C# 6" xmlns:a11="http://cninnovation.com/samples/authors/2016">
     <Publisher>Wrox Press</Publisher>
     <Chapters>
       <Chapter Id="1" Title=".NET Architecture" />
       <Chapter Id="2" Title="Core C#" />
     </Chapters>
+    <a11:Author>
+      <FirstName>Christian</FirstName>
+      <LastName>Nagel</LastName>
+    </a11:Author>
   </Book>
   <Book Isbn="355354" Title="Enterprise Services">
     <Publisher>Addison Wesley</Publisher>
@@ -13,5 +17,6 @@
       <Chapter Id="1" Title="Distributed Applications" />
       <Chapter Id="5" Title="COM+ Services" />
     </Chapters>
+
   </Book>
-</Books>
+</b:Books>
