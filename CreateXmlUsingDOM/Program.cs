@@ -16,8 +16,11 @@ namespace CreateXmlUsingDOM
             node = doc.CreateProcessingInstruction("Book", "Process info");
             doc.AppendChild(node);
 
+
+
             // create the books element within the 'wrox:bookstore' namespace
-            node = doc.CreateElement("p", "Books", "wrox:bookstore");
+            // node = doc.CreateElement("p", "Books", "wrox:bookstore");
+            node = doc.CreateElement("Books");
             doc.AppendChild(node);
 
             // create the book element within books

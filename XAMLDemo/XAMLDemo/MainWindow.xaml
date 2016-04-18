@@ -6,15 +6,17 @@
         xmlns:local="clr-namespace:XAMLDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <RadialGradientBrush x:Key="myBrush">
+            <GradientStop Offset="0" Color="White" />
+            <GradientStop Offset="0.5" Color="Orange" />
+            <GradientStop Offset="1" Color="Red" />
+        </RadialGradientBrush>
+    </Window.Resources>
     <Grid>
-        <Button Width="200" Height="90" Content="Click Me!">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Offset="0" Color="White" />
-                    <GradientStop Offset="0.5" Color="Orange" />
-                    <GradientStop Offset="1" Color="Red" />
-                </RadialGradientBrush>
-            </Button.Background>
+        <Button Width="200" Background="{StaticResource myBrush}">
+            Click Me!
+            <Button.Height>90</Button.Height>
         </Button>
         
     </Grid>

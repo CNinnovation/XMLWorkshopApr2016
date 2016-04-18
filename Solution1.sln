@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateXmlUsingDOM", "Create
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOMParser", "DOMParser\DOMParser.csproj", "{6C889F9A-8887-4E50-8F31-12DA8C06470E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateXmlUsingLinqToXml", "CreateXmlUsingLinqToXml\CreateXmlUsingLinqToXml.csproj", "{8528BDB3-C20D-49F1-8978-DBD5DFF0BB45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6C889F9A-8887-4E50-8F31-12DA8C06470E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C889F9A-8887-4E50-8F31-12DA8C06470E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C889F9A-8887-4E50-8F31-12DA8C06470E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8528BDB3-C20D-49F1-8978-DBD5DFF0BB45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8528BDB3-C20D-49F1-8978-DBD5DFF0BB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8528BDB3-C20D-49F1-8978-DBD5DFF0BB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8528BDB3-C20D-49F1-8978-DBD5DFF0BB45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

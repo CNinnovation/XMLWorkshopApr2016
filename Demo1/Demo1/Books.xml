@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Books>
+  <Book Isbn="273487487" Title="Professional C# 6">
+    <Publisher>Wrox Press</Publisher>
+    <Chapters>
+      <Chapter Id="1" Title=".NET Architecture" />
+      <Chapter Id="2" Title="Core C#" />
+    </Chapters>
+  </Book>
+  <Book Isbn="355354" Title="Enterprise Services">
+    <Publisher>Addison Wesley</Publisher>
+    <Chapters>
+      <Chapter Id="1" Title=".NET Architecture" />
+      <Chapter Id="5" Title="Core C#" />
+    </Chapters>
+  </Book>
+</Books>
