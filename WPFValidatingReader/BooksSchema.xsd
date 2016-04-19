@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://www.samples.com/books/2016" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.samples.com/books/2016" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:tns="http://www.samples.com/books/2016" attributeFormDefault="unqualified" elementFormDefault="qualified" 
+           targetNamespace="http://www.samples.com/books/2016" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import namespace="http://www.samples.com/authors/2016" />
   <xs:element name="books">
     <xs:complexType>

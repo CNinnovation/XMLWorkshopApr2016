@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<employees>
+    <employee>
+        <name>
+            <surname>Zimprich</surname>
+            <firstname>Karin</firstname> 
+        </name>
+        <salary>
+            <basic>156000</basic>
+            <bonus>0.125</bonus>
+        </salary>
+        <region>
+            <city>New York City</city>
+            <state>NY</state>
+        </region>
+        <vacation>
+            <allowed>30</allowed>
+            <taken>27</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Barnhill</surname>
+            <firstname>Josh</firstname>
+        </name>
+        <salary>
+            <basic>16000</basic>
+            <bonus>0.273</bonus>
+        </salary>
+        <region>
+            <city>Washington</city>
+            <state>DC</state>
+        </region>
+        <vacation>
+            <allowed>120</allowed>
+            <taken>15</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Chen</surname>
+            <firstname>John</firstname>
+        </name>
+        <salary>
+            <basic>37000</basic>
+            <bonus>0.292</bonus>
+        </salary>
+        <region>
+            <city>Chicago</city>
+            <state>IL</state>
+        </region>
+        <vacation>
+            <allowed>15</allowed>
+            <taken>5</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Castaneda</surname>
+            <firstname>Marea Angela</firstname>
+        </name>
+        <salary>
+            <basic>25000</basic>
+            <bonus>0.134</bonus>
+        </salary>
+        <region>
+            <city>Redmond</city>
+            <state>WA</state>
+        </region>
+        <vacation>
+            <allowed>22</allowed>
+            <taken>5</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Meng</surname>
+            <firstname>Jessup</firstname>
+        </name>
+        <salary>
+            <basic>51000</basic>
+            <bonus>0.333</bonus>
+        </salary>
+        <region>
+            <city>Washington</city>
+            <state>DC</state>
+        </region>
+        <vacation>
+            <allowed>27</allowed>
+            <taken>8</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Yoshida</surname>
+            <firstname>Kim</firstname>
+        </name>
+        <salary>
+            <basic>73500</basic>
+            <bonus>0.080</bonus>
+        </salary>
+        <region>
+            <city>Washington</city>
+            <state>DC</state>
+        </region>
+        <vacation>
+            <allowed>18</allowed>
+            <taken>16</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Rounthwaite</surname>
+            <firstname>Robert</firstname>
+        </name>
+        <salary>
+            <basic>1565000</basic>
+            <bonus>0.562</bonus>
+        </salary>
+        <region>
+            <city>Buffalo</city>
+            <state>NY</state>
+        </region>
+        <vacation>
+            <allowed>28</allowed>
+            <taken>28</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Rudd</surname>
+            <firstname>Darlene</firstname>
+        </name>
+        <salary>
+            <basic>230000</basic>
+            <bonus>5.3</bonus>
+        </salary>
+        <region>
+            <city>Long Island</city>
+            <state>NY</state>
+        </region>
+        <vacation>
+            <allowed>22</allowed>
+            <taken>2</taken>
+        </vacation>
+    </employee>
+
+    <employee>
+        <name>
+            <surname>Sacksteder</surname>
+            <firstname>Lane</firstname>
+        </name>
+        <salary>
+            <basic>21000</basic>
+            <bonus>0.666</bonus>
+        </salary>
+        <region>
+            <city>Niagara Falls</city>
+            <state>NY</state>
+        </region>
+        <vacation>
+            <allowed>22</allowed>
+            <taken>1</taken>
+        </vacation>
+    </employee>
+
+</employees>
+
