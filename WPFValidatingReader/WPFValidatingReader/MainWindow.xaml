@@ -1,0 +1,51 @@
+﻿<Window x:Class="WPFValidatingReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFValidatingReader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="4" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="4" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <GridSplitter Grid.Column="0" HorizontalAlignment="Right" Width="5" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Button Click="OnLoadXml">Load XML</Button>
+            </StackPanel>
+            <TextBox IsReadOnly="True" Text="{Binding Xml, Mode=OneWay}" Grid.Row="1" />
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Button Click="OnLoadXsd">Load XSD</Button>
+                <Button Click="OnValidate">Validate</Button>
+            </StackPanel>
+            <TextBox IsReadOnly="True" Text="{Binding Xsd, Mode=OneWay}" Grid.Row="1" />
+        </Grid>
+        <TextBox IsReadOnly="True" Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Error, Mode=OneWay}" />
+
+    </Grid>
+</Window>
