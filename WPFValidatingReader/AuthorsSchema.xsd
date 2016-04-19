@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.samples.com/authors/2016" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.samples.com/authors/2016" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="authors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="15" minOccurs="1" name="author">
+         
+          <xs:complexType>
+            <xs:choice>
+              <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="1" name="firstname" type="xs:string" />
+                <xs:element minOccurs="1" maxOccurs="1" name="lastname" type="xs:string" />
+              </xs:sequence>
+              <xs:element minOccurs="0" name="name">
+                <xs:complexType>
+                  <xs:attribute name="firstname" type="xs:string" use="required" />
+                  <xs:attribute name="lastname" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<people xmlns:xlink="http://www.w3.org/1999/xlink>">
+<people xmlns:xlink="http://www.w3.org/1999/xlink">
   <person born="1912" died="1954" id="p342">
     <name>
       <first_name>Alan</first_name>
@@ -9,5 +9,14 @@
     <profession>Computer scientist</profession>
     <profession>mathematican</profession>
     <homepage xlink:href="http://www.turing.org.uk/" />
+  </person>
+  <person born="1949" id="p311">
+    <name>
+      <first_name>Niki</first_name>
+      <last_name>Lauda</last_name>
+    </name>
+    <!-- Did the word computer scientist exist... -->
+    <profession>Business Man</profession>
+
   </person>
 </people>

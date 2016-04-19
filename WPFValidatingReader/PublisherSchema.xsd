@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:a="http://www.samples.com/authors/2016" xmlns:b="http://www.samples.com/books/2016" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.samples.com/publisher/2016" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.samples.com/books/2016" />
+  <xs:element name="publisher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="b:books" />
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

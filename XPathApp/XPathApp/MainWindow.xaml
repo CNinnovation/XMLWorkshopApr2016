@@ -6,40 +6,60 @@
         xmlns:local="clr-namespace:XPathApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:Demo x:Key="d" Test="sample value" />
+    </Window.Resources>
+    <!--<Window.LayoutTransform>
+        <ScaleTransform ScaleX="6" ScaleY="6" />
+    </Window.LayoutTransform>-->
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="auto" />
-        </Grid.RowDefinitions>
+        <Grid.LayoutTransform>
+            <ScaleTransform ScaleX="2" ScaleY="2" />
+        </Grid.LayoutTransform>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <Button Content="Load XML" Click="OnLoadXml" />
-            </StackPanel>
-            <TextBox Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding XmlContent, Mode=OneWay}" AcceptsReturn="True" AcceptsTab="True" />
-        </Grid>
-        <GridSplitter Grid.Column="0" Width="3" HorizontalAlignment="Right" />
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <TextBox MinWidth="200" Text="{Binding XPathExpression, Mode=TwoWay}" />
 
-                <CheckBox IsChecked="{Binding Multiple}">Multiple</CheckBox>
-                <Button Content="XPath SelectNode(s)" Click="OnXPath" />
-                <Button Content="XPath Evaluate" Click="OnXPathEvaluate" />
-            </StackPanel>
-            <TextBox Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding Result, Mode=OneWay}" AcceptsReturn="True" AcceptsTab="True" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="1.8*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <Button Content="Load XML" Click="OnLoadXml" />
+                </StackPanel>
+                <TextBox Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding XmlContent, Mode=OneWay}" AcceptsReturn="True" AcceptsTab="True" />
+            </Grid>
+            <GridSplitter Grid.Column="0" Width="3" HorizontalAlignment="Right" />
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <TextBlock Text="Prefix:" />
+                    <TextBox MinWidth="40" Text="{Binding Prefix, Mode=TwoWay}" />
+                    <TextBlock Text="Namespace:" />
+                    <TextBox MinWidth="100" Text="{Binding Namespace, Mode=TwoWay}" />
+                    <Button Content="Add Namespace" Click="OnAddNamespace" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <TextBox MinWidth="100" Text="{Binding XPathExpression, Mode=TwoWay}" />
+
+                    <CheckBox IsChecked="{Binding Multiple}" Content="Multiple"/>
+                    <Button Content="XPath SelectNode(s)" Click="OnXPath" />
+                    <Button Content="XPath Evaluate" Click="OnXPathEvaluate" />
+                </StackPanel>
+                <TextBox Grid.Row="2" TextWrapping="Wrap" IsReadOnly="True" Text="{Binding Result, Mode=OneWay}" AcceptsReturn="True" AcceptsTab="True" />
+            </Grid>
+            <TextBlock Text="{Binding ErrorInformation, Mode=OneWay}" Grid.Row="1" />
         </Grid>
-        <TextBlock Text="{Binding ErrorInformation, Mode=OneWay}" Grid.Row="1" />
     </Grid>
 </Window>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<publisher name="Wrox Press" xmlns="http://www.samples.com/publisher/2016">
+  <b:books xmlns:b="http://www.samples.com/books/2016">
+    <b:book publisher="Wrox Press">
+      <b:title>Beginning Visual C#</b:title>
+      <a:authors xmlns:a="http://www.samples.com/authors/2016">
+        <a:author>
+          <a:name firstname="Karli" lastname="Watson" />
+        </a:author>
+        <a:author>
+          <a:firstname>Christian</a:firstname>
+          <a:lastname>Nagel</a:lastname>
+        </a:author>
+      </a:authors>
+    </b:book>
+    <b:book publisher="Wrox Press">
+      <b:title>Professional C# 6</b:title>
+      <a:authors xmlns:a="http://www.samples.com/authors/2016">
+        <a:author>
+          <a:firstname>Christian</a:firstname>
+          <a:lastname>Nagel</a:lastname>
+        </a:author>
+      </a:authors>
+    </b:book>
+  </b:books>
+</publisher>
