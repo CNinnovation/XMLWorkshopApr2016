@@ -1,0 +1,39 @@
+<catalog>
+
+	<product code="135">
+		<department>Childrens</department>
+		<description>Blue jeans</description>
+		<price>23.99</price>
+	</product>
+
+	<product code="468">
+		<department>Childrens</department>
+		<description>Denim jacket</description>
+		<price>32.95</price>
+	</product>
+
+	<product code="790">
+		<department>Childrens</department>
+		<description>T shirt</description>
+		<price>10.95</price>
+	</product>
+
+	<product code="531">
+		<department>Childrens</department>
+		<description>Sweater</description>
+		<price>15.50</price>
+	</product>
+
+	<product code="680">
+		<department>Childrens</department>
+		<description>Socks</description>
+		<price>1.99</price>
+	</product>
+
+	<product code="975">
+		<department>Childrens</department>
+		<description>Trainers</description>
+		<price>18.99</price>
+	</product>
+
+</catalog>

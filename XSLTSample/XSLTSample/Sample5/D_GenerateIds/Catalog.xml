@@ -1,0 +1,129 @@
+
+<catalog>
+	<products>
+		<product code="135">
+			<department>1</department>
+			<description>Blue jeans</description>
+			<price>23.99</price>
+			<supplier>1</supplier>
+		</product>
+	
+		<product code="468">
+			<department>1</department>
+			<description>Denim jacket</description>
+			<price>32.95</price>
+			<supplier>1</supplier>
+		</product>
+	
+		<product code="790">
+			<department>1</department>
+			<description>T shirt</description>
+			<price>10.95</price>
+			<supplier>1</supplier>
+		</product>
+	
+		<product code="531">
+			<department>1</department>
+			<description>Sweater</description>
+			<price>15.50</price>
+			<supplier>3</supplier>
+		</product>
+	
+		<product code="680">
+			<department>1</department>
+			<description>Socks</description>
+			<price>1.99</price>
+			<supplier>2</supplier>
+		</product>
+	
+		<product code="975">
+			<department>1</department>
+			<description>Trainers</description>
+			<price>18.99</price>
+			<supplier>3</supplier>
+		</product>
+	
+		<product code="456">
+			<department>2</department>
+			<description>Plaid shirt</description>
+			<price>22.95</price>
+			<supplier>3</supplier>
+		</product>
+	
+		<product code="789">
+			<department>2</department>
+			<description>Leather jacket</description>
+			<price>185.00</price>
+			<supplier>2</supplier>
+		</product>
+	
+		<product code="321">
+			<department>2</department>
+			<description>Silk tie</description>
+			<price>32.50</price>
+			<supplier>1</supplier>
+		</product>
+	
+		<product code="123">
+			<department>3</department>
+			<description>Blue jeans</description>
+			<price>35.99</price>
+			<supplier>1</supplier>
+		</product>
+		
+		<product code="654">
+			<department>3</department>
+			<description>Wool sweater</description>
+			<price>27.99</price>
+			<supplier>1</supplier>
+		</product>
+	
+		<product code="987">
+			<department>3</department>
+			<description>Patent shoes</description>
+			<price>87.00</price>
+			<supplier>3</supplier>
+		</product>
+	</products>
+
+	<departments>	
+		<department code="1">
+			<name>Childrens</name>
+			<manager>Scott Fallon</manager>
+			<buyer>Kim Hightower</buyer>
+		</department>
+	
+		<department code="2">
+			<name>Gents</name>
+			<manager>Jo Brown</manager>
+			<buyer>Cynthia Randall</buyer>
+		</department>
+	
+		<department code="3">
+			<name>Ladies</name>
+			<manager>Michael Matey</manager>
+			<buyer>Nikki McCormick</buyer>
+		</department>
+	</departments>
+
+	<suppliers>
+		<supplier>
+			<code>1</code>
+			<name>Fabrikam</name>
+			<email>sales@fabrikam.com</email>
+		</supplier>
+	
+		<supplier>
+			<code>2</code>
+			<name>Litware</name>
+			<email>enquiries@litware.com</email>
+		</supplier>
+	
+		<supplier>
+			<code>3</code>
+			<name>Contoso, Ltd</name>
+			<email>sales@contoso.com</email>
+		</supplier>
+	</suppliers>
+	
+</catalog>

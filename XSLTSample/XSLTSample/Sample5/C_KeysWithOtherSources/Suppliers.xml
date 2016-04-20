@@ -1,0 +1,21 @@
+<suppliers>
+
+	<supplier>
+		<code>1</code>
+		<name>JFabrikam Inc</name>
+		<email>sales@fabrikam.com</email>
+	</supplier>
+
+	<supplier>
+		<code>2</code>
+		<name>Litware</name>
+		<email>enquiries@litware.com</email>
+	</supplier>
+
+	<supplier>
+		<code>3</code>
+		<name>Contoso, Ltd</name>
+		<email>sales@contoso.com</email>
+	</supplier>
+
+</suppliers>

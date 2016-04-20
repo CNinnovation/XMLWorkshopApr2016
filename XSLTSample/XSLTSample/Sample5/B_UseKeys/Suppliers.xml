@@ -1,0 +1,21 @@
+<suppliers>
+
+	<supplier>
+		<code>1</code>
+		<name>Just Togs</name>
+		<email>sales@justtogs.com</email>
+	</supplier>
+
+	<supplier>
+		<code>2</code>
+		<name>Hanson Brothers</name>
+		<email>enquiries@hanson.com</email>
+	</supplier>
+
+	<supplier>
+		<code>3</code>
+		<name>Contoso, Ltd</name>
+		<email>sales@contoso.com</email>
+	</supplier>
+
+</suppliers>

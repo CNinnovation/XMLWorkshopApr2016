@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8D3A523-9000-43E5-90BE-C26DBBFA777C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XSLTSample</RootNamespace>
+    <AssemblyName>XSLTSample</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sample1_Templates\Catalog.xml" />
+    <Content Include="Sample1_Templates\Catalog_2.xslt" />
+    <Content Include="Sample1_Templates\Catalog_1.xslt" />
+    <Content Include="Sample1_Templates\Catalog_3.xslt" />
+    <Content Include="Sample2_Sort_IncludeImport\BasicRules.xsl" />
+    <Content Include="Sample2_Sort_IncludeImport\Employees.xml" />
+    <Content Include="Sample2_Sort_IncludeImport\somedata.htm" />
+    <Content Include="Sample2_Sort_IncludeImport\SortByName.xsl" />
+    <Content Include="Sample2_Sort_IncludeImport\SortByRegion.xsl" />
+    <Content Include="Sample2_Sort_IncludeImport\SortByTotalSalary.xsl" />
+    <Content Include="Sample2_Sort_IncludeImport\SortByVacationRemaining.xsl" />
+    <Content Include="Sample3_NamedTemplates_ForEach\A_CallTemplates\Catalog.xml" />
+    <Content Include="Sample3_NamedTemplates_ForEach\A_CallTemplates\Products.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sample3_NamedTemplates_ForEach\B_TemplateParameter\Catalog.xml" />
+    <Content Include="Sample3_NamedTemplates_ForEach\B_TemplateParameter\Products.xsl" />
+    <Content Include="Sample3_NamedTemplates_ForEach\C_ForEachChoose\Catalog.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sample3_NamedTemplates_ForEach\C_ForEachChoose\Products.xsl" />
+    <Content Include="Sample4\CreateProjectCosting.xsl" />
+    <Content Include="Sample4\Employees.xml" />
+    <Content Include="Sample5\A_MultipleXMLSources\Catalog.xml" />
+    <Content Include="Sample5\A_MultipleXMLSources\Catalog.xsl" />
+    <Content Include="Sample5\A_MultipleXMLSources\Childrens.xml" />
+    <Content Include="Sample5\A_MultipleXMLSources\Gents.xml" />
+    <Content Include="Sample5\A_MultipleXMLSources\Ladies.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sample5\A_MultipleXMLSources\Merge.xsl" />
+    <Content Include="Sample5\B_UseKeys\Catalog.xml" />
+    <Content Include="Sample5\B_UseKeys\Catalog.xsl" />
+    <Content Include="Sample5\B_UseKeys\Suppliers.xml" />
+    <Content Include="Sample5\C_KeysWithOtherSources\Catalog.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sample5\C_KeysWithOtherSources\Catalog.xsl" />
+    <Content Include="Sample5\C_KeysWithOtherSources\Suppliers.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sample5\D_GenerateIds\Catalog.xml" />
+    <Content Include="Sample5\D_GenerateIds\Catalog.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

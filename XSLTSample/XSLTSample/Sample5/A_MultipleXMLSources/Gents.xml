@@ -1,0 +1,21 @@
+<catalog>
+
+	<product code="456">
+		<department>Gents</department>
+		<description>Plaid shirt</description>
+		<price>22.95</price>
+	</product>
+
+	<product code="789">
+		<department>Gents</department>
+		<description>Leather jacket</description>
+		<price>185.00</price>
+	</product>
+
+	<product code="321">
+		<department>Gents</department>
+		<description>Silk tie</description>
+		<price>32.50</price>
+	</product>
+
+</catalog>

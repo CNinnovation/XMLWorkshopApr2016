@@ -1,0 +1,10 @@
+
+<catalog>
+
+	<files>
+		<file name="gents.xml"/>
+		<file name="ladies.xml"/>
+		<file name="childrens.xml"/>
+	</files>
+
+</catalog>

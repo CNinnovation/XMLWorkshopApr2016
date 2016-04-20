@@ -1,0 +1,21 @@
+<catalog>
+
+	<product code="123">
+		<department>Ladies</department>
+		<description>Blue jeans</description>
+		<price>35.99</price>
+	</product>
+	
+	<product code="654">
+		<department>Ladies</department>
+		<description>Wool sweater</description>
+		<price>27.99</price>
+	</product>
+
+	<product code="987">
+		<department>Ladies</department>
+		<description>Patent shoes</description>
+		<price>87.00</price>
+	</product>
+
+</catalog>

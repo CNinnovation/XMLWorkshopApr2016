@@ -1,0 +1,17 @@
+<employees>
+   <employee>
+      <name>Carol Philips</name>
+      <salary>85000</salary>
+      <region>Redmond</region>
+   </employee>
+   <employee>
+      <name>Charles Fitzgerald</name>
+      <salary>51000</salary>
+      <region>Dallas</region>
+   </employee>
+   <employee>
+      <name>Mike Reid</name>
+      <salary>73500</salary>
+      <region>Washington D.C.</region>
+   </employee>
+</employees>
