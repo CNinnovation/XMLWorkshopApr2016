@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
+		<File FilePath="C:\Source\CNinnovationWeb2013\CNinnovationWeb2013\downloads\Racers.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt"/>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery;xqu">
+		<File FilePath="Sample1.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample2.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample3_BindVariable.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample4_UsePosition.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample5_let.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample6_flr.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample7_flowr.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample8_ifthenelse.xquery" HomeFolder="Yes"/>
+		<File FilePath="Sample9_function.xquery" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath="RacersSchema.xsd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>
