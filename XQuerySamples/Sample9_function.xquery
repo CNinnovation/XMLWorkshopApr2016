@@ -3,8 +3,6 @@ xquery version "1.0";
 declare function local:wins(
   $wins as xs:decimal?)
   as xs:string? {
-    let $x := "kickoff"
-	   return 
 		   if ($wins > 20)
 		   then "MANY wins"
 		   else "not so many wins"
@@ -12,9 +10,8 @@ declare function local:wins(
 
 
 for $racer in doc("racers.xml")/Racers/Racer
-let $winsmessage := concat(' ', local:wins( $racer/Wins ))
 return 
 <Racer>
-  <Name> { $racer/Firstname/text() } </Name>
+  <Name>{ concat( $racer/Firstname/text(), $racer/Lastname/text()) } </Name>
   <Message> { local:wins($racer/Wins) } </Message>
 </Racer>

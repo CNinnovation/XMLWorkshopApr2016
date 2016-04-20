@@ -20,7 +20,7 @@
     <TBODY STYLE="COLOR: blue; FONT-SIZE: 12pt">
 
       <xsl:apply-templates select="employees/employee">
-        <xsl:sort select="name/surname" />
+        <xsl:sort select="name/surname"  />
         <xsl:sort select="name/firstname" />
       </xsl:apply-templates>
 
